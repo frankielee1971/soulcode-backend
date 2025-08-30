@@ -17,4 +17,5 @@ async def receive_webhook(data: ArchetypeData):
         )
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
-    return {"status": "success", "message": f"Archetype for {data.name} logged"}
+    return {"status": "success", "message": f"Archetype for {data.name} logged
+
